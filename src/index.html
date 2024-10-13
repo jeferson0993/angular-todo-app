@@ -1,13 +1,27 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>TodoApp</title>
   <base href="/">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TodoApp</title>
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#dd0031',
+            secondary: '#c3002f',
+            accent: '#1976d2',
+          }
+        }
+      }
+    }
+  </script>
 </head>
-<body>
+<body class="bg-gray-100">
   <app-root></app-root>
 </body>
 </html>
